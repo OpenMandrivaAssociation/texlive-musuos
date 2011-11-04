@@ -1,3 +1,9 @@
+# revision 24201
+# category Package
+# catalog-ctan /macros/latex/contrib/musuos
+# catalog-date 2011-10-04 09:01:45 +0200
+# catalog-license lppl
+# catalog-version 1.1a
 Name:		texlive-musuos
 Version:	1.1a
 Release:	1
@@ -46,6 +52,7 @@ Stefan Hahnheide. A biblatex style is provided.
 #- source
 %doc %{_texmfdistdir}/source/latex/musuos/musuos.dtx
 %doc %{_texmfdistdir}/source/latex/musuos/musuos.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ Stefan Hahnheide. A biblatex style is provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
