@@ -1,11 +1,11 @@
-# revision 24201
+# revision 24798
 # category Package
 # catalog-ctan /macros/latex/contrib/musuos
-# catalog-date 2011-10-04 09:01:45 +0200
+# catalog-date 2011-12-07 16:44:29 +0100
 # catalog-license lppl
-# catalog-version 1.1a
+# catalog-version 1.1c
 Name:		texlive-musuos
-Version:	1.1a
+Version:	1.1c
 Release:	1
 Summary:	Typeset papers for the department of music, Osnabruck
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The package provides a LaTeX class for typesetting term papers
@@ -29,19 +26,19 @@ Osnabruck, Germany, according to the specifications of Prof.
 Stefan Hahnheide. A biblatex style is provided.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
