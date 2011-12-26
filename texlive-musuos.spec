@@ -1,4 +1,4 @@
-# revision 24798
+# revision 24857
 # category Package
 # catalog-ctan /macros/latex/contrib/musuos
 # catalog-date 2011-12-07 16:44:29 +0100
@@ -6,7 +6,7 @@
 # catalog-version 1.1c
 Name:		texlive-musuos
 Version:	1.1c
-Release:	1
+Release:	2
 Summary:	Typeset papers for the department of music, Osnabruck
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/musuos
