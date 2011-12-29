@@ -25,16 +25,8 @@ at the institute of music and musicology of the University of
 Osnabruck, Germany, according to the specifications of Prof.
 Stefan Hahnheide. A biblatex style is provided.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -50,7 +42,6 @@ Stefan Hahnheide. A biblatex style is provided.
 #- source
 %doc %{_texmfdistdir}/source/latex/musuos/musuos.dtx
 %doc %{_texmfdistdir}/source/latex/musuos/musuos.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,5 +52,3 @@ Stefan Hahnheide. A biblatex style is provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
