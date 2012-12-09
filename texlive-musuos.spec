@@ -52,3 +52,25 @@ Stefan Hahnheide. A biblatex style is provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1c-3
++ Revision: 754238
+- Rebuild to reduce used resources
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1c-2
++ Revision: 745303
+- texlive-musuos
+
+* Sat Dec 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1c-1
++ Revision: 743313
+- texlive-musuos
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1a-1
++ Revision: 719091
+- texlive-musuos
+- texlive-musuos
+- texlive-musuos
+- texlive-musuos
+
