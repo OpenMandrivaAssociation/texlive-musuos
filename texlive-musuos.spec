@@ -6,7 +6,7 @@
 # catalog-version 1.1c
 Name:		texlive-musuos
 Version:	1.1c
-Release:	8
+Release:	9
 Summary:	Typeset papers for the department of music, Osnabruck
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/musuos
