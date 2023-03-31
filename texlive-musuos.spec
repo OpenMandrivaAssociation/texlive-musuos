@@ -1,6 +1,6 @@
 Name:		texlive-musuos
 Version:	24857
-Release:	1
+Release:	2
 Summary:	Typeset papers for the department of music, Osnabruck
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/musuos
