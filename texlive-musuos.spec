@@ -3,7 +3,7 @@ Version:	24857
 Release:	2
 Summary:	Typeset papers for the department of music, Osnabruck
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/musuos
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/musuos
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/musuos.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/musuos.doc.r%{version}.tar.xz
